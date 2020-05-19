@@ -4,6 +4,9 @@
 .mx-overrides .a_start {
   display: none;
 }
+.mx-overrides .company-circles .et_pb_button_module_wrapper {
+  position: relative;
+}
 .mx-overrides .company-circles .intellisync-btt {
   position: absolute;
   top: -222px;
