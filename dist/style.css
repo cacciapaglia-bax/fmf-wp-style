@@ -1,9 +1,3 @@
-.mx-overrides .a_days,
-.mx-overrides .a_duration,
-.mx-overrides .a_noflessons,
-.mx-overrides .a_start {
-  display: none;
-}
 .mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
