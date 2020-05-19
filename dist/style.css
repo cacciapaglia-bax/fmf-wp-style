@@ -4,17 +4,17 @@
 .mx-overrides .a_start {
   display: none;
 }
-.mx-overrides .intellisync-btt {
+.mx-overrides .company-circles .intellisync-btt {
   position: absolute;
   top: -222px;
   right: 82px;
 }
-.mx-overrides .wisnam-btt {
+.mx-overrides .company-circles .wisnam-btt {
   position: absolute;
   top: -222px;
   left: 113px;
 }
-.mx-overrides .baxenergy-btt {
+.mx-overrides .company-circles .baxenergy-btt {
   position: absolute;
   top: -271px;
   left: 154px;
