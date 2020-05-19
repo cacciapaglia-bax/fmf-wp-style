@@ -1,0 +1,11 @@
+{
+  "name": "css-overrides-fmf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch":"sass --watch .\\index.scss .\\dist\\style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,34 @@
+.courses {
+    .a_days {}
+
+    .a_duration {}
+
+    .a_noflessons {}
+
+    .a_start {}
+}
+
+.a_days,
+.a_duration,
+.a_noflessons,
+.a_start {
+    display: none;
+}
+
+.intellisync-btt {
+    position: absolute;
+    top: -222px;
+    right: 82px;
+}
+
+.wisnam-btt {
+    position: absolute;
+    top: -222px;
+    left: 113px;
+}
+
+.baxenergy-btt {
+    position: absolute;
+    top: -271px;
+    left: 154px;
+}
