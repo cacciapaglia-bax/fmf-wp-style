@@ -4,16 +4,41 @@
         grid-template-columns: repeat(2, [col] 1fr);
         grid-template-rows: [row] auto;
     }
-    
+
     span.et_shop_image {
         grid-column: 1 / span 2;
         grid-row: row 1;
         height: 150px;
     }
-    
+
     .woocommerce ul.products li.product a img {
         max-height: 100%;
         object-fit: cover;
+    }
+
+    .woocommerce-loop-product__title {
+        grid-row: row 2;
+        grid-column: 1/span 2;
+    }
+
+    .a_coursetype {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .a_duration {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .a_location {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .a_start {
+        grid-column: unset;
+        grid-row: unset;
     }
 }
 

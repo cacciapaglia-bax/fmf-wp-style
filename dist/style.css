@@ -12,6 +12,26 @@
   max-height: 100%;
   object-fit: cover;
 }
+.mx-overrides .courses .woocommerce-loop-product__title {
+  grid-row: row 2;
+  grid-column: 1/span 2;
+}
+.mx-overrides .courses .a_coursetype {
+  grid-column: unset;
+  grid-row: unset;
+}
+.mx-overrides .courses .a_duration {
+  grid-column: unset;
+  grid-row: unset;
+}
+.mx-overrides .courses .a_location {
+  grid-column: unset;
+  grid-row: unset;
+}
+.mx-overrides .courses .a_start {
+  grid-column: unset;
+  grid-row: unset;
+}
 .mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
