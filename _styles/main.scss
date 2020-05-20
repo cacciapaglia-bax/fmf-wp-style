@@ -5,20 +5,28 @@
         grid-template-rows: [row] auto;
         border-radius: 20px;
         overflow: hidden;
-        padding-bottom: 33px;
-        background-image: url('https://fmf.academy/wp-content/uploads/2020/05/wave_tile.svg');
+        padding: 16px;
+        padding-bottom: 42px;
+    }
+
+    .product.type-product {
+        background-image: url(https://fmf.academy/wp-content/uploads/2020/05/wave_tile.svg);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: contain;
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(112,112,112,1);
-        -moz-box-shadow: 0px 0px 15px 0px rgba(112,112,112,1);
-        box-shadow: 0px 0px 15px 0px rgba(112,112,112,1);
+        border-radius: 30px;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(112, 112, 112, 1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(112, 112, 112, 1);
+        box-shadow: 0px 0px 15px 0px rgba(112, 112, 112, 1);
     }
 
     span.et_shop_image {
         grid-column: 1 / span 2;
         grid-row: row 1;
         height: 150px;
+        margin: -16px;
+        margin-bottom: 0px;
     }
 
     .woocommerce ul.products li.product a img {
@@ -49,6 +57,7 @@
         font-size: 10px;
         font-weight: bold;
         text-transform: uppercase;
+        text-align: right;
     }
 
     $course-fsize: 12px;
@@ -57,6 +66,8 @@
     .a_duration {
         font-size: $course-fsize;
         font-weight: unset;
+        color: black;
+        text-align: right;
     }
 
     .start-label {
@@ -69,6 +80,14 @@
         font-size: $course-fsize;
         font-weight: $semibold;
         text-transform: uppercase;
+    }
+
+    .price {
+        font-size: $course-fsize !important;
+        font-weight: 700 !important;
+        text-transform: uppercase;
+        color: black;
+        text-align: right;
     }
 }
 
