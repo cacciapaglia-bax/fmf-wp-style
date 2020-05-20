@@ -1,4 +1,4 @@
-.mx-overrides .courses .woocommerce-loop-product__link {
+.mx-overrides .woocommerce-loop-product__link {
   display: grid;
   grid-template-columns: repeat(2, [col] 1fr);
   grid-template-rows: [row] auto;
@@ -7,7 +7,7 @@
   padding: 16px;
   padding-bottom: 42px;
 }
-.mx-overrides .courses .product.type-product {
+.mx-overrides .product.type-product {
   background-image: url(https://fmf.academy/wp-content/uploads/2020/05/wave_tile.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -18,31 +18,31 @@
   -moz-box-shadow: 0px 0px 15px 0px #707070;
   box-shadow: 0px 0px 15px 0px #707070;
 }
-.mx-overrides .courses span.et_shop_image {
+.mx-overrides span.et_shop_image {
   grid-column: 1/span 2;
   grid-row: row 1;
   height: 150px;
   margin: -16px;
   margin-bottom: 0px;
 }
-.mx-overrides .courses .woocommerce ul.products li.product a img {
+.mx-overrides .woocommerce ul.products li.product a img {
   max-height: 100%;
   object-fit: cover;
 }
-.mx-overrides .courses .woocommerce-loop-product__title {
+.mx-overrides .woocommerce-loop-product__title {
   grid-row: row 2;
   grid-column: 1/span 2;
   font-size: 16px;
   font-weight: unset;
 }
-.mx-overrides .courses .a_coursetype {
+.mx-overrides .a_coursetype {
   grid-column: unset;
   grid-row: unset;
   font-size: 10px;
   font-weight: 900;
   text-transform: uppercase;
 }
-.mx-overrides .courses .a_location {
+.mx-overrides .a_location {
   grid-column: unset;
   grid-row: unset;
   font-size: 10px;
@@ -50,27 +50,27 @@
   text-transform: uppercase;
   text-align: right;
 }
-.mx-overrides .courses .a_duration {
+.mx-overrides .a_duration {
   font-size: 12px;
   font-weight: 700;
   color: #0e28e2;
   text-align: right;
 }
-.mx-overrides .courses .start-label {
+.mx-overrides .start-label {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.mx-overrides .courses .a_start {
+.mx-overrides .a_start {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #272727;
 }
-.mx-overrides .courses span.price {
+.mx-overrides span.price {
   text-align: right;
 }
-.mx-overrides .courses .woocommerce-Price-amount.amount {
+.mx-overrides .woocommerce-Price-amount.amount {
   font-size: 12px !important;
   font-weight: 700 !important;
   text-transform: uppercase;
