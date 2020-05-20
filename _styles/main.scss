@@ -1,4 +1,8 @@
 .courses {
+    .woocommerce-loop-product__link {
+        display: grid;
+    }
+
     .a_days {}
 
     .a_duration {}
@@ -7,12 +11,14 @@
 
     .a_start {}
 }
+
 // http://fmf.academy/wp-content/uploads/2020/05/wave_tile.svg
 
 .company-circles {
     .et_pb_button_module_wrapper {
         position: relative;
     }
+
     .intellisync-btt {
         position: absolute;
         top: -222px;
@@ -32,6 +38,6 @@
     }
 }
 
-.academy-blurbs {
-
+span.et_pb_section_video_bg {
+    z-index: -1;
 }

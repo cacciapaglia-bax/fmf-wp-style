@@ -1,3 +1,6 @@
+.mx-overrides .courses .woocommerce-loop-product__link {
+  display: grid;
+}
 .mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
@@ -15,6 +18,9 @@
   position: absolute;
   top: -271px;
   left: 154px;
+}
+.mx-overrides span.et_pb_section_video_bg {
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
