@@ -18,27 +18,45 @@
 
     .woocommerce-loop-product__title {
         grid-row: row 2;
-        grid-column: 1/span 2;
+        grid-column: 1 / span 2;
+        font-size: 16px;
+        font-weight: unset;
     }
 
+    $black: 900;
     .a_coursetype {
         grid-column: unset;
         grid-row: unset;
-    }
-
-    .a_duration {
-        grid-column: unset;
-        grid-row: unset;
+        font-size: 10px;
+        font-weight: $black;
+        text-transform: uppercase;
     }
 
     .a_location {
         grid-column: unset;
         grid-row: unset;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    $course-fsize: 12px;
+    $semibold: 700;
+    .a_duration {
+        font-size: $course-fsize;
+        font-weight: unset;
+    }
+
+    .start-label {
+        font-size: $course-fsize;
+        font-weight: $semibold;
+        text-transform: uppercase;
     }
 
     .a_start {
-        grid-column: unset;
-        grid-row: unset;
+        font-size: $course-fsize;
+        font-weight: $semibold;
+        text-transform: uppercase;
     }
 }
 
