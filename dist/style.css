@@ -52,8 +52,8 @@
 }
 .mx-overrides .courses .a_duration {
   font-size: 12px;
-  font-weight: unset;
-  color: black;
+  font-weight: 700;
+  color: #0e28e2;
   text-align: right;
 }
 .mx-overrides .courses .start-label {
@@ -65,12 +65,16 @@
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #272727;
 }
-.mx-overrides .courses .price {
+.mx-overrides .courses span.price {
+  text-align: right;
+}
+.mx-overrides .courses .woocommerce-Price-amount.amount {
   font-size: 12px !important;
   font-weight: 700 !important;
   text-transform: uppercase;
-  color: black;
+  color: #272727;
   text-align: right;
 }
 .mx-overrides .company-circles .et_pb_button_module_wrapper {

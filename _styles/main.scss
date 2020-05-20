@@ -65,8 +65,8 @@
 
     .a_duration {
         font-size: $course-fsize;
-        font-weight: unset;
-        color: black;
+        font-weight: $semibold;
+        color: #0e28e2;
         text-align: right;
     }
 
@@ -80,13 +80,18 @@
         font-size: $course-fsize;
         font-weight: $semibold;
         text-transform: uppercase;
+        color: #272727;
     }
 
-    .price {
+    span.price {
+        text-align: right;
+    }
+
+    .woocommerce-Price-amount.amount {
         font-size: $course-fsize !important;
         font-weight: 700 !important;
         text-transform: uppercase;
-        color: black;
+        color: #272727;
         text-align: right;
     }
 }
