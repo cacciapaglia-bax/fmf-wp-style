@@ -1,5 +1,16 @@
 .mx-overrides .courses .woocommerce-loop-product__link {
   display: grid;
+  grid-template-columns: repeat(2, [col] 1fr);
+  grid-template-rows: [row] auto;
+}
+.mx-overrides .courses span.et_shop_image {
+  grid-column: 1/span 2;
+  grid-row: row 1;
+  height: 150px;
+}
+.mx-overrides .courses .woocommerce ul.products li.product a img {
+  max-height: 100%;
+  object-fit: cover;
 }
 .mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;

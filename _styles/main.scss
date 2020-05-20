@@ -1,15 +1,20 @@
 .courses {
     .woocommerce-loop-product__link {
         display: grid;
+        grid-template-columns: repeat(2, [col] 1fr);
+        grid-template-rows: [row] auto;
     }
-
-    .a_days {}
-
-    .a_duration {}
-
-    .a_noflessons {}
-
-    .a_start {}
+    
+    span.et_shop_image {
+        grid-column: 1 / span 2;
+        grid-row: row 1;
+        height: 150px;
+    }
+    
+    .woocommerce ul.products li.product a img {
+        max-height: 100%;
+        object-fit: cover;
+    }
 }
 
 // http://fmf.academy/wp-content/uploads/2020/05/wave_tile.svg
