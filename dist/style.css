@@ -9,6 +9,9 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+  -webkit-box-shadow: 0px 0px 15px 0px #707070;
+  -moz-box-shadow: 0px 0px 15px 0px #707070;
+  box-shadow: 0px 0px 15px 0px #707070;
 }
 .mx-overrides .courses span.et_shop_image {
   grid-column: 1/span 2;

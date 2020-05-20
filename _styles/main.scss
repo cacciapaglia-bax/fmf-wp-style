@@ -10,6 +10,9 @@
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: contain;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(112,112,112,1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(112,112,112,1);
+        box-shadow: 0px 0px 15px 0px rgba(112,112,112,1);
     }
 
     span.et_shop_image {
