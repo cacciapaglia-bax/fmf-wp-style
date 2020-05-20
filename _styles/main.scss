@@ -3,6 +3,13 @@
         display: grid;
         grid-template-columns: repeat(2, [col] 1fr);
         grid-template-rows: [row] auto;
+        border-radius: 20px;
+        overflow: hidden;
+        padding-bottom: 33px;
+        background-image: url('https://fmf.academy/wp-content/uploads/2020/05/wave_tile.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
     }
 
     span.et_shop_image {
@@ -24,6 +31,7 @@
     }
 
     $black: 900;
+
     .a_coursetype {
         grid-column: unset;
         grid-row: unset;
@@ -42,6 +50,7 @@
 
     $course-fsize: 12px;
     $semibold: 700;
+
     .a_duration {
         font-size: $course-fsize;
         font-weight: unset;
