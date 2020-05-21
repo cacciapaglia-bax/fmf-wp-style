@@ -37,6 +37,10 @@ span.et_shop_image img {
     object-fit: cover;
 }
 
+.product .related h2 {
+    font-size: 16px !important;
+}
+
 .woocommerce-loop-product__title {
     grid-row: row 2;
     grid-column: 1 / span 2;
