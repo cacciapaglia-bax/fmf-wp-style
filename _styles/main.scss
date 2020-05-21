@@ -40,3 +40,8 @@ span.et_pb_section_video_bg {
         background: #0e28e2;
     }
 }
+
+.container.et_menu_container, .et_pb_row {
+    // Trying to fix bug caused by themify
+    max-width: 1920px !important;
+}

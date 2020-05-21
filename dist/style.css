@@ -108,5 +108,8 @@
   width: 100px;
   background: #0e28e2;
 }
+.mx-overrides .container.et_menu_container, .mx-overrides .et_pb_row {
+  max-width: 1920px !important;
+}
 
 /*# sourceMappingURL=style.css.map */
