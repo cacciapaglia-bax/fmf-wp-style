@@ -83,6 +83,38 @@
   color: #272727;
   text-align: right;
 }
+.mx-overrides body.single.single-product #main-content > .container {
+  max-width: 100%;
+  width: 100%;
+}
+.mx-overrides h5.et_pb_toggle_title {
+  background-image: url("https://fmf.academy/wp-content/uploads/2020/05/Mask-Group-61.png");
+  background-size: cover;
+  display: block;
+  padding: 44px 56px !important;
+  border-radius: 20px;
+  box-shadow: 0px 2px 18px 0px #0e28e266;
+}
+.mx-overrides .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_open {
+  padding: 0px;
+}
+.mx-overrides .et_pb_toggle_title:before {
+  content: "L";
+  color: #0e28e2;
+}
+.mx-overrides .et_pb_toggle_content {
+  margin: 26px;
+  margin-top: 0px;
+  padding: 31px;
+  box-shadow: 0px 2px 18px 0px #0e28e266;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.mx-overrides .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_close {
+  padding: 0px;
+  border: 0px;
+  background: transparent;
+}
 .mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
