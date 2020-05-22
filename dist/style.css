@@ -123,6 +123,7 @@
 .mx-overrides .course-info-sidebar {
   position: sticky;
   top: 117px;
+  margin-bottom: 15px;
 }
 .mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
