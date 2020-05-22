@@ -101,6 +101,8 @@
 .mx-overrides .et_pb_toggle_title:before {
   content: "L";
   color: #0e28e2;
+  font-size: 50px;
+  padding-right: 34px;
 }
 .mx-overrides .et_pb_toggle_content {
   margin: 26px;
@@ -114,6 +116,9 @@
   padding: 0px;
   border: 0px;
   background: transparent;
+}
+.mx-overrides .et_pb_toggle {
+  border: 0px !important;
 }
 .mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;

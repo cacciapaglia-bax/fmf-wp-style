@@ -18,8 +18,10 @@ h5.et_pb_toggle_title {
 }
 
 .et_pb_toggle_title:before {
-    content: "\L";
+    content: "L";
     color: #0e28e2;
+    font-size: 50px;
+    padding-right: 34px;
 }
 
 .et_pb_toggle_content {
@@ -35,4 +37,8 @@ h5.et_pb_toggle_title {
     padding: 0px;
     border: 0px;
     background: transparent;
+}
+
+.et_pb_toggle {
+    border: 0px !important;
 }
