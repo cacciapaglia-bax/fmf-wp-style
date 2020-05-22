@@ -114,9 +114,5 @@
   width: 100px;
   background: #0e28e2;
 }
-.mx-overrides body.single.single-product #main-content > .container {
-  max-width: 100%;
-  width: 100%;
-}
 
 /*# sourceMappingURL=style.css.map */
