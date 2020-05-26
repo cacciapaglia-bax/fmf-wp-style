@@ -13,32 +13,35 @@
     display: flex;
     flex-direction: row;
     padding: 30px;
-    outline: 1px solid red;
     background: white;
     box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.3);
     border-radius: 12px;
+    margin-bottom: 50px;
 }
 
 .job-right {
     margin-left: auto;
 }
+
+.career-row__logo img {
+    max-width: 300px;
+}
 </style>
 
 <script>
     console.log('totally not a log');
-    const logosDir = 'https://www.freemindfoundry.com/wp-content/themes/freemindfoundry/img/group_logos/'
     const websites = [{
-        logo: logosDir + "FMF_Logo.png",
+        logo: 'https://fmf.academy/wp-content/uploads/2020/05/FMF_Logo.png',
         id: "career_fmf",
         apiID: "FreeMindFoundry1",
     },
     {
-        logo: logosDir + "BAX_Logo.png",
+        logo: 'https://fmf.academy/wp-content/uploads/2020/05/Bax_logo_color_rgb.png',
         id: "career_bax",
         apiID: "BaxEnergy",
     },
     {
-        logo: logosDir + "Intellisync_logo.png",
+        logo: 'https://fmf.academy/wp-content/uploads/2020/05/Intellisync_logo.png',
         id: "career_intellisync",
         apiID: "Intellisync",
     }
@@ -68,7 +71,7 @@
         });
 
         const row = document.getElementById(website.id);
-        let innerHTML = `<div class="career-row__logo" id="${website.styleID}"> <img src="${website.logo}"> </div>`;
+        let innerHTML = `<div class="career-row__logo"> <img src="${website.logo}"> </div>`;
         for (let i = 0; i < jobs.length; i++) {
             const job = jobs[i];
             const id = job.id;
