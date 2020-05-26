@@ -1,0 +1,87 @@
+.card-back .et_pb_blurb_content {
+    display: flex;
+    align-items: center;
+}
+
+.card-back {
+    display: flex;
+}
+
+body:not(.et-fb) .flip-card-col {
+    background-color: transparent;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body:not(.et-fb) .flip-perspective-wrap {
+    position: relative;
+    width: 350px;
+    height: 280px;
+    -webkit-transition: transform 0.8s;
+    transition: transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+body:not(.et-fb) .flip-card-col:hover .flip-perspective-wrap {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+body:not(.et-fb) .card-front,
+body:not(.et-fb) .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin: 0 !important;
+}
+
+/*Center IMG and fake Title*/
+body:not(.et-fb) .card-front {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body:not(.et-fb) .card-front p {
+    font-size: 24px;
+    font-family: 'Blender', Helvetica, Arial, Lucida, sans-serif;
+}
+
+body:not(.et-fb) .card-back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-perspective-wrap .et_pb_main_blurb_image {
+    margin-bottom: 0px;
+}
+
+/* 
+I'm using this Class to force webkit to pre-render the other side of the card
+A very fast 360 rotation will force it to "cache" it
+*/
+.card-back {
+    animation-name: spinner_cache_fix;
+    animation-duration: 0.01s;
+}
+
+@keyframes spinner_cache_fix {
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}

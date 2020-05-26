@@ -1,0 +1,36 @@
+<span id="helper-divi">
+    Smart recruiter code here!
+</span>
+<style>
+    .company-desc,
+    .job-desc,
+    .job-qual strong {
+        z-index: unset;
+    }
+</style>
+<script>
+    function updateDiviText(id, content) {
+        document.getElementById(id).getElementsByTagName('p')[0].innerHTML = content;
+    }
+    async function getJob(params) {
+        if (!window.location.hash) {
+            console.warn('no job');
+            return;
+        }
+        const holdId = window.location.hash.replace('#', '');
+        const splitted = holdId.split(':');
+        jQuery('#helper-divi').remove(); // I need to delete it because it needs to be seen only in the DiviEditor
+        const url = `https://api.smartrecruiters.com/v1/companies/${splitted[0]}/postings/${splitted[1]}`;
+
+        const response = await fetch(url);
+        const request = await response.json();
+        console.log(request);
+        updateDiviText('company-desc', request.jobAd.sections.companyDescription.text);
+        updateDiviText('job-desc', request.jobAd.sections.jobDescription.text);
+        updateDiviText('job-qual', request.jobAd.sections.qualifications.text);
+        const staticURL = "https://jobs.smartrecruiters.com/";
+        const link = `${staticURL}/${splitted[0]}/${splitted[1]}`;
+        document.getElementById('apply-btt').href = link;
+    }
+    getJob();
+</script>

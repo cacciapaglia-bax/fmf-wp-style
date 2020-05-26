@@ -1,0 +1,87 @@
+<div id="career_fmf">
+    Career placeholder
+</div>
+<div id="career_bax">
+    Career placeholder
+</div>
+<div id="career_intellisync">
+    Career placeholder
+</div>
+
+<style>
+.job {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    outline: 1px solid red;
+    background: white;
+    box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.3);
+    border-radius: 12px;
+}
+
+.job-right {
+    margin-left: auto;
+}
+</style>
+
+<script>
+    console.log('totally not a log');
+    const logosDir = 'https://www.freemindfoundry.com/wp-content/themes/freemindfoundry/img/group_logos/'
+    const websites = [{
+        logo: logosDir + "FMF_Logo.png",
+        id: "career_fmf",
+        apiID: "FreeMindFoundry1",
+    },
+    {
+        logo: logosDir + "BAX_Logo.png",
+        id: "career_bax",
+        apiID: "BaxEnergy",
+    },
+    {
+        logo: logosDir + "Intellisync_logo.png",
+        id: "career_intellisync",
+        apiID: "Intellisync",
+    }
+    ];
+
+    const staticURL = "https://jobs.smartrecruiters.com/";
+    const fillTemplate = (title, id, website) => {
+        const link = `https://fmf.academy/career/#${website.apiID}:${id}`;
+        return `<div class="job">
+                <div class="job-left">
+                    <a class="job-title" href="${link}"> ${title}</a>
+                </div>
+                <div class="job-right">
+                    <a class="job-btt" href="${link}">VIEW DETAILS</a>
+                </div>
+            </div>
+            `;
+    }
+
+    const getJobs = async (website) => {
+        const response = await fetch(`https://api.smartrecruiters.com/v1/companies/${website.apiID}/postings`);
+        const request = await response.json(); //extract JSON from the http response
+        const jobs = request.content.sort(function (a, b) {
+            // ASC  -> a.length - b.length
+            // DESC -> b.length - a.length
+            return a.name.length - b.name.length;
+        });
+
+        const row = document.getElementById(website.id);
+        let innerHTML = `<div class="career-row__logo" id="${website.styleID}"> <img src="${website.logo}"> </div>`;
+        for (let i = 0; i < jobs.length; i++) {
+            const job = jobs[i];
+            const id = job.id;
+            const title = job.name.toLowerCase();
+            if (title.indexOf('spontaneous') < 0) {
+                innerHTML = innerHTML + fillTemplate(title, id, website);
+            }
+        }
+        row.innerHTML = innerHTML;
+    }
+
+    for (let i = 0; i < websites.length; i++) {
+        const website = websites[i];
+        getJobs(website);
+    }
+</script>
