@@ -167,7 +167,6 @@ body.mx-overrides .act-post .col-md-12 {
   display: flex;
   flex-direction: column;
   min-height: 300px;
-  background-image: url(https://fmf.academy/wp-content/uploads/2020/06/wave_card.png);
 }
 body.mx-overrides a.act-view-more.et_pb_button:hover {
   background: transparent !important;
