@@ -1,0 +1,50 @@
+.act-post {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.entry-title {
+    margin-top: 16px;
+}
+
+.entry-title,
+.decm-show-detail-center,
+.ecs-excerpt {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.ecs-showdetail {
+}
+
+.ecs-showdetail.et_pb_button_wrapper {
+    /* width: 100%; */
+}
+
+a.act-view-more.et_pb_button {
+    width: 100%;
+    border-radius: 0;
+    background: transparent;
+    color: white;
+    text-align: center;
+    height: 60px;
+    line-height: 60px !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#page-container .et_pb_section .decm_event_display_0 p.ecs-showdetail {
+    margin: 0 !important;
+    margin-top: auto !important;
+}
+
+.act-post .col-md-12 {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+
+a.act-view-more.et_pb_button:hover {
+    background: transparent !important;
+}

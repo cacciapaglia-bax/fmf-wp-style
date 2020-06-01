@@ -1,4 +1,4 @@
-.mx-overrides .woocommerce-loop-product__link {
+body.mx-overrides .woocommerce-loop-product__link {
   display: grid;
   grid-template-columns: repeat(2, [col] 1fr);
   grid-template-rows: [row] auto;
@@ -7,10 +7,10 @@
   padding: 16px;
   padding-bottom: 42px;
 }
-.mx-overrides #main-content .container {
+body.mx-overrides #main-content .container {
   padding-top: 0px !important;
 }
-.mx-overrides .mx-products-hook .product.type-product {
+body.mx-overrides .mx-products-hook .product.type-product {
   background-image: url(https://fmf.academy/wp-content/uploads/2020/05/wave_tile.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -21,34 +21,34 @@
   -moz-box-shadow: 0px 0px 15px 0px #707070;
   box-shadow: 0px 0px 15px 0px #707070;
 }
-.mx-overrides span.et_shop_image {
+body.mx-overrides span.et_shop_image {
   grid-column: 1/span 2;
   grid-row: row 1;
   height: 150px;
   margin: -16px;
   margin-bottom: 0px;
 }
-.mx-overrides span.et_shop_image img {
+body.mx-overrides span.et_shop_image img {
   max-height: 100%;
   object-fit: cover;
 }
-.mx-overrides .product .related h2 {
+body.mx-overrides .product .related h2 {
   font-size: 16px !important;
 }
-.mx-overrides .woocommerce-loop-product__title {
+body.mx-overrides .woocommerce-loop-product__title {
   grid-row: row 2;
   grid-column: 1/span 2;
   font-size: 16px;
   font-weight: unset;
 }
-.mx-overrides .a_coursetype {
+body.mx-overrides .a_coursetype {
   grid-column: unset;
   grid-row: unset;
   font-size: 10px;
   font-weight: 900;
   text-transform: uppercase;
 }
-.mx-overrides .a_location {
+body.mx-overrides .a_location {
   grid-column: unset;
   grid-row: unset;
   font-size: 10px;
@@ -56,38 +56,38 @@
   text-transform: uppercase;
   text-align: right;
 }
-.mx-overrides .a_duration {
+body.mx-overrides .a_duration {
   font-size: 12px;
   font-weight: 700;
   color: #0e28e2;
   text-align: right;
 }
-.mx-overrides .start-label {
+body.mx-overrides .start-label {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.mx-overrides .a_start {
+body.mx-overrides .a_start {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #272727;
 }
-.mx-overrides span.price {
+body.mx-overrides span.price {
   text-align: right;
 }
-.mx-overrides .woocommerce-Price-amount.amount {
+body.mx-overrides .woocommerce-Price-amount.amount {
   font-size: 12px !important;
   font-weight: 700 !important;
   text-transform: uppercase;
   color: #272727;
   text-align: right;
 }
-.mx-overrides body.single.single-product #main-content > .container {
+body.mx-overrides body.single.single-product #main-content > .container {
   max-width: 100%;
   width: 100%;
 }
-.mx-overrides h5.et_pb_toggle_title {
+body.mx-overrides h5.et_pb_toggle_title {
   background-image: url("https://fmf.academy/wp-content/uploads/2020/05/Mask-Group-61.png");
   background-size: cover;
   display: block;
@@ -95,16 +95,16 @@
   border-radius: 20px;
   box-shadow: 0px 2px 18px 0px #0e28e266;
 }
-.mx-overrides .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_open {
+body.mx-overrides .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_open {
   padding: 0px;
 }
-.mx-overrides .et_pb_toggle_title:before {
+body.mx-overrides .et_pb_toggle_title:before {
   content: "L";
   color: #0e28e2;
   font-size: 50px;
   padding-right: 34px;
 }
-.mx-overrides .et_pb_toggle_content {
+body.mx-overrides .et_pb_toggle_content {
   margin: 26px;
   margin-top: 0px;
   padding: 31px;
@@ -112,41 +112,80 @@
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.mx-overrides .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_close {
+body.mx-overrides .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_close {
   padding: 0px;
   border: 0px;
   background: transparent;
 }
-.mx-overrides .et_pb_toggle {
+body.mx-overrides .et_pb_toggle {
   border: 0px !important;
 }
-.mx-overrides .course-info-sidebar {
+body.mx-overrides .course-info-sidebar {
   position: sticky;
   top: 117px;
   margin-bottom: 15px;
 }
-.mx-overrides .company-circles .et_pb_button_module_wrapper {
+body.mx-overrides .act-post {
+  border-radius: 30px;
+  overflow: hidden;
+}
+body.mx-overrides .entry-title {
+  margin-top: 16px;
+}
+body.mx-overrides .entry-title,
+body.mx-overrides .decm-show-detail-center,
+body.mx-overrides .ecs-excerpt {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+body.mx-overrides .ecs-showdetail.et_pb_button_wrapper {
+  /* width: 100%; */
+}
+body.mx-overrides a.act-view-more.et_pb_button {
+  width: 100%;
+  border-radius: 0;
+  background: transparent;
+  color: white;
+  text-align: center;
+  height: 60px;
+  line-height: 60px !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+body.mx-overrides #page-container .et_pb_section .decm_event_display_0 p.ecs-showdetail {
+  margin: 0 !important;
+  margin-top: auto !important;
+}
+body.mx-overrides .act-post .col-md-12 {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+body.mx-overrides a.act-view-more.et_pb_button:hover {
+  background: transparent !important;
+}
+body.mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
-.mx-overrides .company-circles .intellisync-btt {
+body.mx-overrides .company-circles .intellisync-btt {
   position: absolute;
   top: -222px;
   right: 82px;
 }
-.mx-overrides .company-circles .wisnam-btt {
+body.mx-overrides .company-circles .wisnam-btt {
   position: absolute;
   top: -222px;
   left: 113px;
 }
-.mx-overrides .company-circles .baxenergy-btt {
+body.mx-overrides .company-circles .baxenergy-btt {
   position: absolute;
   top: -271px;
   left: 154px;
 }
-.mx-overrides span.et_pb_section_video_bg {
+body.mx-overrides span.et_pb_section_video_bg {
   z-index: -1;
 }
-.mx-overrides .teachers h4.item-title:after {
+body.mx-overrides .teachers h4.item-title:after {
   content: "";
   display: block;
   margin: auto;
