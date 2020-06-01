@@ -136,6 +136,9 @@ body.mx-overrides .act-post {
 body.mx-overrides .entry-title {
   margin-top: 16px;
 }
+body.mx-overrides h2.entry-title.title1.summary {
+  min-height: 65px;
+}
 body.mx-overrides .entry-title,
 body.mx-overrides .decm-show-detail-center,
 body.mx-overrides .ecs-excerpt {
