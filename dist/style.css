@@ -132,6 +132,7 @@ body.mx-overrides .act-post {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: auto;
+  box-shadow: 0px 0px 15px 0px #707070;
 }
 body.mx-overrides .entry-title {
   margin-top: 16px;
