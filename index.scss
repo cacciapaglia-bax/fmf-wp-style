@@ -1,4 +1,11 @@
 body.mx-overrides {
-    @import './_styles/main.scss';
+    @import "./_styles/main.scss";
 }
-@import './_styles/flipcards.scss';
+@import "./_styles/flipcards.scss";
+
+// From events
+body.et-db.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event_display_0 p.ecs-showdetail {
+    margin: 0 !important;
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+}

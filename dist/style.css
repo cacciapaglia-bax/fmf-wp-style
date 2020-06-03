@@ -160,12 +160,6 @@ body.mx-overrides a.act-view-more.et_pb_button {
   font-size: 18px !important;
   font-weight: 500 !important;
 }
-body.mx-overrides #page-container .et_pb_section .decm_event_display_0 p.ecs-showdetail,
-body.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event_display_0 p.ecs-showdetail {
-  margin: 0 !important;
-  margin-top: auto !important;
-  margin-bottom: 0 !important;
-}
 body.mx-overrides .act-post .col-md-12 {
   display: flex;
   flex-direction: column;
@@ -291,6 +285,11 @@ A very fast 360 rotation will force it to "cache" it
     -ms-transform: rotateY(-360deg);
     transform: rotateY(-360deg);
   }
+}
+body.et-db.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event_display_0 p.ecs-showdetail {
+  margin: 0 !important;
+  margin-top: auto !important;
+  margin-bottom: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
