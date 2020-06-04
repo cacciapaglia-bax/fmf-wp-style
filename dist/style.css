@@ -168,6 +168,39 @@ body.mx-overrides .act-post .col-md-12 {
 body.mx-overrides a.act-view-more.et_pb_button:hover {
   background: transparent !important;
 }
+body.mx-overrides .newsletter-form .frm_fields_container {
+  display: flex !important;
+  flex-direction: row;
+}
+body.mx-overrides .newsletter-form label {
+  display: none;
+}
+body.mx-overrides .newsletter-form div#frm_field_3_container {
+  display: block;
+}
+body.mx-overrides .newsletter-form button.frm_button_submit {
+  background: #0e28e2;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+body.mx-overrides .newsletter-form input#field_29yf4d {
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #0e28e2;
+  min-height: 46px;
+  font-size: 16px;
+}
+body.mx-overrides .newsletter-form .frm_submit {
+  margin-left: 70px;
+}
+body.mx-overrides .newsletter-form div#frm_desc_field_29yf4d {
+  font-size: 12px;
+}
 body.mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }

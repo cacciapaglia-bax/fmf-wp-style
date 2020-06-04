@@ -1,0 +1,41 @@
+.newsletter-form {
+    .frm_fields_container {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    label {
+        display: none;
+    }
+
+    div#frm_field_3_container {
+        display: block;
+    }
+
+    button.frm_button_submit {
+        background: #0e28e2;
+        border: 0px;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 16px 24px;
+        border-radius: 50px;
+        font-weight: 500;
+    }
+
+    input#field_29yf4d {
+        background: transparent;
+        border: 0px;
+        border-bottom: 1px solid #0e28e2;
+        min-height: 46px;
+        font-size: 16px;
+    }
+
+    .frm_submit {
+        margin-left: 70px;
+    }
+
+    div#frm_desc_field_29yf4d {
+        font-size: 12px;
+    }
+}
