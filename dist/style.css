@@ -201,6 +201,30 @@ body.mx-overrides .newsletter-form .frm_submit {
 body.mx-overrides .newsletter-form div#frm_desc_field_29yf4d {
   font-size: 12px;
 }
+body.mx-overrides .frm_style_formidable-style.with_frm_style .form-field input:not([type=file]):focus, body.mx-overrides .frm_style_formidable-style.with_frm_style select:focus, body.mx-overrides .frm_style_formidable-style.with_frm_style textarea:focus, body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=text], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=password], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=email], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=number], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=url], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=tel], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=search], body.mx-overrides .frm_form_fields_active_style, body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field .frm-card-element.StripeElement, body.mx-overrides .frm_style_formidable-style.with_frm_style .chosen-container-single.chosen-container-active .chosen-single, body.mx-overrides .frm_style_formidable-style.with_frm_style .chosen-container-active .chosen-choices {
+  box-shadow: none;
+}
+body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=text], body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=password], body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=email], body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=number], body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=url], body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=tel], body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=phone], body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=search], body.mx-overrides .frm_style_formidable-style.with_frm_style select, body.mx-overrides .frm_style_formidable-style.with_frm_style textarea, body.mx-overrides .frm_form_fields_style, body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_scroll_box .frm_opt_container, body.mx-overrides .frm_form_fields_active_style, body.mx-overrides .frm_form_fields_error_style, body.mx-overrides .frm_style_formidable-style.with_frm_style .frm-card-element.StripeElement, body.mx-overrides .frm_style_formidable-style.with_frm_style .chosen-container-multi .chosen-choices, body.mx-overrides .frm_style_formidable-style.with_frm_style .chosen-container-single .chosen-single {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #0e28e2 !important;
+  border-radius: 0px;
+  box-shadow: none;
+}
+body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_compact .frm_dropzone.dz-clickable .dz-message, body.mx-overrides .frm_style_formidable-style.with_frm_style input[type=submit], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_submit input[type=button], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_submit button, body.mx-overrides .frm_form_submit_style, body.mx-overrides .frm_style_formidable-style.with_frm_style .frm-edit-page-btn {
+  background: #0e28e2;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+body.mx-overrides .with_frm_style .frm_submit {
+  text-align: center;
+}
 body.mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
