@@ -225,6 +225,9 @@ body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_compact .frm_d
 body.mx-overrides .with_frm_style .frm_submit {
   text-align: center;
 }
+body.mx-overrides fieldset {
+  border: 0px !important;
+}
 body.mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
