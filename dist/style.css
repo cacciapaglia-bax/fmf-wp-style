@@ -346,6 +346,11 @@ A very fast 360 rotation will force it to "cache" it
     transform: rotateY(-360deg);
   }
 }
+.flip-perspective-wrap img {
+  max-height: 256px;
+  opacity: 1 !important;
+}
+
 @media (min-width: 1025px) {
   .container.clearfix.et_menu_container {
     display: flex;
