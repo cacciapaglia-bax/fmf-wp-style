@@ -48,3 +48,24 @@ h5.et_pb_toggle_title {
     top: 117px;
     margin-bottom: 15px;
 }
+
+.wpf_layout_horizontal .wpf_item_name {text-transform: uppercase;color: #0e28e2;font-size: 0.7em;font-weight: 600;}
+
+.wpf_layout_horizontal .wpf_item {
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 3px 3px 6px 0px #0e28e242;
+    margin: 16px;
+    padding: 8px;
+}
+
+.wpf_form .wpf_layout_horizontal.wpf_items_wrapper .wpf_item .wpf_item_name:after {
+    font-size: 0.8em;
+}
+
+.wpf_items_wrapper.wpf_layout_horizontal.wpf_items_grouped {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+}
