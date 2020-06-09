@@ -139,6 +139,9 @@ body.mx-overrides .wpf_layout_horizontal .wpf_item {
 body.mx-overrides .wpf_form .wpf_layout_horizontal.wpf_items_wrapper .wpf_item .wpf_item_name:after {
   font-size: 0.8em;
 }
+body.mx-overrides .wpf_items_wrapper.wpf_layout_horizontal.wpf_items_grouped {
+  text-align: center;
+}
 body.mx-overrides .act-post {
   border-radius: 30px;
   overflow: hidden;
