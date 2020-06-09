@@ -17,9 +17,7 @@ body.mx-overrides .mx-products-hook .product.type-product {
   background-size: contain;
   border-radius: 30px;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 15px 0px #707070;
-  -moz-box-shadow: 0px 0px 15px 0px #707070;
-  box-shadow: 0px 0px 15px 0px #707070;
+  box-shadow: 3px 3px 6px 0px #0e28e24d;
 }
 body.mx-overrides span.et_shop_image {
   grid-column: 1/span 2;
@@ -140,9 +138,6 @@ body.mx-overrides .wpf_layout_horizontal .wpf_item {
 }
 body.mx-overrides .wpf_form .wpf_layout_horizontal.wpf_items_wrapper .wpf_item .wpf_item_name:after {
   font-size: 0.8em;
-}
-body.mx-overrides .wpf_items_wrapper.wpf_layout_horizontal.wpf_items_grouped {
-  text-align: center;
 }
 body.mx-overrides .act-post {
   border-radius: 30px;
