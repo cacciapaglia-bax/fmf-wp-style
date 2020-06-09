@@ -64,8 +64,5 @@ h5.et_pb_toggle_title {
 }
 
 .wpf_items_wrapper.wpf_layout_horizontal.wpf_items_grouped {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: row;
-    justify-content: center;
-}
+    text-align: center;
+  }

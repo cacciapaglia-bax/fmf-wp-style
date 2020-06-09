@@ -142,10 +142,7 @@ body.mx-overrides .wpf_form .wpf_layout_horizontal.wpf_items_wrapper .wpf_item .
   font-size: 0.8em;
 }
 body.mx-overrides .wpf_items_wrapper.wpf_layout_horizontal.wpf_items_grouped {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: row;
-  justify-content: center;
+  text-align: center;
 }
 body.mx-overrides .act-post {
   border-radius: 30px;
