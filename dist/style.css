@@ -259,6 +259,9 @@ body.mx-overrides .teachers h4.item-title:after {
   width: 100px;
   background: #0e28e2;
 }
+body.mx-overrides span.woocommerce-Price-amount.amount {
+  display: none !important;
+}
 
 .card-back .et_pb_blurb_content {
   display: flex;
