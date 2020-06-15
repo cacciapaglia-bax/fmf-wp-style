@@ -824,7 +824,7 @@ html:not(.lazy-images) .gallery-item a:after {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-@media (1260px-px: 1020px) {
+@media (min-width: 1020px) {
     .gallery {
         grid-template-columns: repeat(4, 1fr);
     }
