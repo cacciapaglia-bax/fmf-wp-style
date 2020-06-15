@@ -948,6 +948,13 @@ html:not(.lazy-images) .gallery-item a:after {
     display: none;
 }
 
+// FMF SPECIFIC OVERRIDE
+
+.pswp__bg {
+    background: rgba(0, 0, 255, 0.5);
+    backdrop-filter: blur(7px);
+}
+
 // DIVI OVERRIDES BELOW
 
 .gallery-scope .gallery-item a {
@@ -956,4 +963,10 @@ html:not(.lazy-images) .gallery-item a:after {
 
 .gallery-scope .gallery-item:hover .gallery-caption {
     width: auto;
+}
+
+.pswp {
+    height: calc(100% - 84px);
+    top: 116px;
+    bottom: 0;
 }

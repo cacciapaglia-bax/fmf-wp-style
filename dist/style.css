@@ -1350,12 +1350,23 @@ html:not(.lazy-images) .gallery-item a:after {
   display: none;
 }
 
+.pswp__bg {
+  background: rgba(0, 0, 255, 0.5);
+  backdrop-filter: blur(7px);
+}
+
 .gallery-scope .gallery-item a {
   width: 100%;
 }
 
 .gallery-scope .gallery-item:hover .gallery-caption {
   width: auto;
+}
+
+.pswp {
+  height: calc(100% - 84px);
+  top: 116px;
+  bottom: 0;
 }
 
 body.et-db.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event_display_0 p.ecs-showdetail {
