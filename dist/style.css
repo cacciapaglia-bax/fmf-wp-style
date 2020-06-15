@@ -1355,15 +1355,13 @@ html:not(.lazy-images) .gallery-item a:after {
   backdrop-filter: blur(7px);
 }
 
-.gallery-scope .gallery-item a {
+body.mx-overrides .gallery-scope .gallery-item a {
   width: 100%;
 }
-
-.gallery-scope .gallery-item:hover .gallery-caption {
+body.mx-overrides .gallery-scope .gallery-item:hover .gallery-caption {
   width: auto;
 }
-
-.pswp {
+body.mx-overrides .pswp {
   height: calc(100% - 84px);
   top: 116px;
   bottom: 0;
