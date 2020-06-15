@@ -104,7 +104,6 @@ var gallery = new Vue({
 })
 
 const cssFiles = [
-    'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css',
     'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css',
 ]
