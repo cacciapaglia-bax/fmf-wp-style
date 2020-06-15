@@ -102,3 +102,21 @@ var gallery = new Vue({
     el: "#gallery",
     data: GALLERY
 })
+
+const cssFiles = [
+    'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css',
+]
+
+for (let i = 0; i < cssFiles.length; i++) {
+    const cssFile = cssFiles[i];
+    const link = document.createElement("link");
+    link.href = cssFile;
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.media = "screen,print";
+
+    document.getElementsByTagName("head")[0].appendChild(link);
+}
+

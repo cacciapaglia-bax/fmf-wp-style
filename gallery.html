@@ -2,11 +2,6 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.2/lazysizes.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.js'></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css'>
-
-
 <div class="gallery" id="gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
     <figure class="gallery-item" v-bind:name="image.src" v-bind:class="[image.class]" v-for="(image, index) in images"
         itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
