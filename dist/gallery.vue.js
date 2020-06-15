@@ -1,8 +1,3 @@
-var gallery = new Vue({
-    el: "#gallery",
-    data: GALLERY
-})
-
 const GALLERY = {
     images: [
         {
@@ -102,3 +97,8 @@ const GALLERY = {
         'sqrd': '1000x1000',
     }
 }
+
+var gallery = new Vue({
+    el: "#gallery",
+    data: GALLERY
+})
