@@ -71,3 +71,17 @@
 fieldset {
     border: 0px !important;
 }
+
+#frm_form_2_container #frm_field_14_container .frm_opt_container {
+    display: flex;
+}
+
+.frm_radio {
+    margin-right: 16px;
+}
+
+@media (max-width: 375px) {
+    #frm_form_2_container #frm_field_14_container .frm_opt_container {
+        flex-direction: column;
+    }
+}

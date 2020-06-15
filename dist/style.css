@@ -245,6 +245,17 @@ body.mx-overrides .with_frm_style .frm_submit {
 body.mx-overrides fieldset {
   border: 0px !important;
 }
+body.mx-overrides #frm_form_2_container #frm_field_14_container .frm_opt_container {
+  display: flex;
+}
+body.mx-overrides .frm_radio {
+  margin-right: 16px;
+}
+@media (max-width: 375px) {
+  body.mx-overrides #frm_form_2_container #frm_field_14_container .frm_opt_container {
+    flex-direction: column;
+  }
+}
 body.mx-overrides .company-circles .et_pb_button_module_wrapper {
   position: relative;
 }
