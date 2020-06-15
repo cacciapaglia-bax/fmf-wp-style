@@ -1354,6 +1354,10 @@ html:not(.lazy-images) .gallery-item a:after {
   width: 100%;
 }
 
+.gallery-scope .gallery-item:hover .gallery-caption {
+  width: auto;
+}
+
 body.et-db.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event_display_0 p.ecs-showdetail {
   margin: 0 !important;
   margin-top: auto !important;

@@ -948,7 +948,12 @@ html:not(.lazy-images) .gallery-item a:after {
     display: none;
 }
 
-// DIVI OVERRIDE
+// DIVI OVERRIDES BELOW
+
 .gallery-scope .gallery-item a {
     width: 100%;
+}
+
+.gallery-scope .gallery-item:hover .gallery-caption {
+    width: auto;
 }
