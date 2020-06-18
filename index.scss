@@ -11,3 +11,14 @@ body.et-db.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event
     margin-top: auto !important;
     margin-bottom: 0 !important;
 }
+
+
+@media (max-width: 1024px) {
+    .et-db #et-boc .et-l .et_pb_row.et_pb_row_1.course-info-sidebar {
+        min-width: 90vw;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        position: relative;
+        margin-bottom: 152px;
+    }
+}
