@@ -335,6 +335,9 @@ body.mx-overrides .company-circles .baxenergy-btt {
     margin-top: 40px;
     margin-right: auto;
   }
+  body.mx-overrides figure.gallery-item[name="fmf-space-4.jpg"] {
+    display: none;
+  }
 }
 body.mx-overrides span.et_pb_section_video_bg {
   z-index: -1;
