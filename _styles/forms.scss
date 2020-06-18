@@ -42,15 +42,46 @@
 
 @media (max-width: 375px) {
     .newsletter-form {
-        flex-direction: column;
+        .frm_fields_container {
+            flex-direction: column;
+        }
     }
 }
 
-.frm_style_formidable-style.with_frm_style .form-field input:not([type=file]):focus, .frm_style_formidable-style.with_frm_style select:focus, .frm_style_formidable-style.with_frm_style textarea:focus, .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=text], .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=password], .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=email], .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=number], .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=url], .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=tel], .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=search], .frm_form_fields_active_style, .frm_style_formidable-style.with_frm_style .frm_focus_field .frm-card-element.StripeElement, .frm_style_formidable-style.with_frm_style .chosen-container-single.chosen-container-active .chosen-single, .frm_style_formidable-style.with_frm_style .chosen-container-active .chosen-choices {
+.frm_style_formidable-style.with_frm_style .form-field input:not([type="file"]):focus,
+.frm_style_formidable-style.with_frm_style select:focus,
+.frm_style_formidable-style.with_frm_style textarea:focus,
+.frm_style_formidable-style.with_frm_style .frm_focus_field input[type="text"],
+.frm_style_formidable-style.with_frm_style .frm_focus_field input[type="password"],
+.frm_style_formidable-style.with_frm_style .frm_focus_field input[type="email"],
+.frm_style_formidable-style.with_frm_style .frm_focus_field input[type="number"],
+.frm_style_formidable-style.with_frm_style .frm_focus_field input[type="url"],
+.frm_style_formidable-style.with_frm_style .frm_focus_field input[type="tel"],
+.frm_style_formidable-style.with_frm_style .frm_focus_field input[type="search"],
+.frm_form_fields_active_style,
+.frm_style_formidable-style.with_frm_style .frm_focus_field .frm-card-element.StripeElement,
+.frm_style_formidable-style.with_frm_style .chosen-container-single.chosen-container-active .chosen-single,
+.frm_style_formidable-style.with_frm_style .chosen-container-active .chosen-choices {
     box-shadow: none;
 }
 
-.frm_style_formidable-style.with_frm_style input[type=text], .frm_style_formidable-style.with_frm_style input[type=password], .frm_style_formidable-style.with_frm_style input[type=email], .frm_style_formidable-style.with_frm_style input[type=number], .frm_style_formidable-style.with_frm_style input[type=url], .frm_style_formidable-style.with_frm_style input[type=tel], .frm_style_formidable-style.with_frm_style input[type=phone], .frm_style_formidable-style.with_frm_style input[type=search], .frm_style_formidable-style.with_frm_style select, .frm_style_formidable-style.with_frm_style textarea, .frm_form_fields_style, .frm_style_formidable-style.with_frm_style .frm_scroll_box .frm_opt_container, .frm_form_fields_active_style, .frm_form_fields_error_style, .frm_style_formidable-style.with_frm_style .frm-card-element.StripeElement, .frm_style_formidable-style.with_frm_style .chosen-container-multi .chosen-choices, .frm_style_formidable-style.with_frm_style .chosen-container-single .chosen-single {
+.frm_style_formidable-style.with_frm_style input[type="text"],
+.frm_style_formidable-style.with_frm_style input[type="password"],
+.frm_style_formidable-style.with_frm_style input[type="email"],
+.frm_style_formidable-style.with_frm_style input[type="number"],
+.frm_style_formidable-style.with_frm_style input[type="url"],
+.frm_style_formidable-style.with_frm_style input[type="tel"],
+.frm_style_formidable-style.with_frm_style input[type="phone"],
+.frm_style_formidable-style.with_frm_style input[type="search"],
+.frm_style_formidable-style.with_frm_style select,
+.frm_style_formidable-style.with_frm_style textarea,
+.frm_form_fields_style,
+.frm_style_formidable-style.with_frm_style .frm_scroll_box .frm_opt_container,
+.frm_form_fields_active_style,
+.frm_form_fields_error_style,
+.frm_style_formidable-style.with_frm_style .frm-card-element.StripeElement,
+.frm_style_formidable-style.with_frm_style .chosen-container-multi .chosen-choices,
+.frm_style_formidable-style.with_frm_style .chosen-container-single .chosen-single {
     border: none;
     outline: none;
     background: transparent;
@@ -59,7 +90,12 @@
     box-shadow: none;
 }
 
-.frm_style_formidable-style.with_frm_style .frm_compact .frm_dropzone.dz-clickable .dz-message, .frm_style_formidable-style.with_frm_style input[type=submit], .frm_style_formidable-style.with_frm_style .frm_submit input[type=button], .frm_style_formidable-style.with_frm_style .frm_submit button, .frm_form_submit_style, .frm_style_formidable-style.with_frm_style .frm-edit-page-btn {
+.frm_style_formidable-style.with_frm_style .frm_compact .frm_dropzone.dz-clickable .dz-message,
+.frm_style_formidable-style.with_frm_style input[type="submit"],
+.frm_style_formidable-style.with_frm_style .frm_submit input[type="button"],
+.frm_style_formidable-style.with_frm_style .frm_submit button,
+.frm_form_submit_style,
+.frm_style_formidable-style.with_frm_style .frm-edit-page-btn {
     background: #0e28e2;
     border: 0px;
     color: white;
