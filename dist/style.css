@@ -335,6 +335,8 @@ body.mx-overrides .company-circles .baxenergy-btt {
     margin-top: 40px;
     margin-right: auto;
   }
+}
+@media (max-width: 426px) {
   body.mx-overrides figure.gallery-item[name="fmf-space-4.jpg"] {
     display: none;
   }
