@@ -218,6 +218,11 @@ body.mx-overrides .newsletter-form .frm_submit {
 body.mx-overrides .newsletter-form div#frm_desc_field_29yf4d {
   font-size: 12px;
 }
+@media (max-width: 375px) {
+  body.mx-overrides .newsletter-form {
+    flex-direction: column;
+  }
+}
 body.mx-overrides .frm_style_formidable-style.with_frm_style .form-field input:not([type=file]):focus, body.mx-overrides .frm_style_formidable-style.with_frm_style select:focus, body.mx-overrides .frm_style_formidable-style.with_frm_style textarea:focus, body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=text], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=password], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=email], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=number], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=url], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=tel], body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field input[type=search], body.mx-overrides .frm_form_fields_active_style, body.mx-overrides .frm_style_formidable-style.with_frm_style .frm_focus_field .frm-card-element.StripeElement, body.mx-overrides .frm_style_formidable-style.with_frm_style .chosen-container-single.chosen-container-active .chosen-single, body.mx-overrides .frm_style_formidable-style.with_frm_style .chosen-container-active .chosen-choices {
   box-shadow: none;
 }

@@ -5,10 +5,10 @@
 <div class="gallery" id="gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
     <figure class="gallery-item" v-bind:name="image.src" v-bind:class="[image.class]" v-for="(image, index) in images"
         itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-        <a v-bind:href="'https://www.freemindfoundry.com/campus/images/spaces/'+ image.src" itemprop="contentUrl" v-bind:data-size="dataSize[image.class]">
+        <a v-bind:href="'https://fmf.academy/campus-gallery/images/spaces/'+ image.src" itemprop="contentUrl" v-bind:data-size="dataSize[image.class]">
             <img class="lazyload lazypreload fadein"
                 src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http://www.w3.org/2000/svg'%20viewBox%3D'0%200%201000%20500'%20%2F%3E"
-                v-bind:data-src="'https://www.freemindfoundry.com/campus/images/spaces/'+ image.src" itemprop="thumbnail" alt="Image description" />
+                v-bind:data-src="'https://fmf.academy/campus-gallery/images/spaces/'+ image.src" itemprop="thumbnail" alt="Image description" />
         </a>
         <figcaption class="gallery-caption" itemprop="caption description">
             {{image.caption}}
