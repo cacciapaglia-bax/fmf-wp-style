@@ -148,6 +148,15 @@ body.mx-overrides .wpf_form .wpf_layout_horizontal.wpf_items_wrapper .wpf_item .
 body.mx-overrides .wpf_items_wrapper.wpf_layout_horizontal.wpf_items_grouped {
   text-align: center;
 }
+@media (max-width: 1024px) {
+  body.mx-overrides .et-db #et-boc .et-l .et_pb_row.et_pb_row_1.course-info-sidebar {
+    min-width: 90vw;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    position: relative;
+    margin-bottom: 152px;
+  }
+}
 body.mx-overrides .act-post {
   border-radius: 30px;
   overflow: hidden;
