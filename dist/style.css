@@ -222,6 +222,9 @@ body.mx-overrides .newsletter-form div#frm_desc_field_29yf4d {
   body.mx-overrides .newsletter-form .frm_fields_container {
     flex-direction: column;
   }
+  body.mx-overrides .newsletter-form .frm_submit {
+    margin-left: 0px;
+  }
 }
 body.mx-overrides .frm_style_formidable-style.with_frm_style .form-field input:not([type=file]):focus,
 body.mx-overrides .frm_style_formidable-style.with_frm_style select:focus,
