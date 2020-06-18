@@ -322,6 +322,20 @@ body.mx-overrides .company-circles .baxenergy-btt {
   top: -271px;
   left: 154px;
 }
+@media (max-width: 768px) {
+  body.mx-overrides .job {
+    flex-direction: column;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  body.mx-overrides .job a.job-btt {
+    display: block;
+  }
+  body.mx-overrides .job .job-right {
+    margin-top: 40px;
+    margin-right: auto;
+  }
+}
 body.mx-overrides span.et_pb_section_video_bg {
   z-index: -1;
 }
