@@ -218,7 +218,7 @@ body.mx-overrides .newsletter-form .frm_submit {
 body.mx-overrides .newsletter-form div#frm_desc_field_29yf4d {
   font-size: 12px;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   body.mx-overrides .newsletter-form .frm_fields_container {
     flex-direction: column;
   }
