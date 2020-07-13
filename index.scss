@@ -26,3 +26,14 @@ body.et-db.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event
 .d-none {
     display: none;
 }
+
+div#courseform.show-course-form {
+    display: block;
+    position: absolute;
+    top: 116px;
+    width: 100vw;
+    height: 100vw;
+    z-index: 9999;
+    background: white;
+    padding: 40px;
+}
