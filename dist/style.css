@@ -124,11 +124,6 @@ body.mx-overrides .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_c
 body.mx-overrides .et_pb_toggle {
   border: 0px !important;
 }
-body.mx-overrides .course-info-sidebar {
-  position: sticky;
-  top: 117px;
-  margin-bottom: 15px;
-}
 body.mx-overrides .wpf_layout_horizontal .wpf_item_name {
   text-transform: uppercase;
   color: #0e28e2;
