@@ -1,0 +1,113 @@
+<div class="jobs-container"
+id="career_bax">
+<div class="job">
+   <a href="#1">Placeholder Position #1</a>
+</div>
+<div class="job">
+   <a href="#1">Placeholder Position #2</a>
+</div>
+<div class="job nomargin">
+   <a href="#1">Placeholder Position #3</a>
+</div>
+</div>
+
+   <style>
+.jobs-container {
+   display: flex;
+   flex: 1 1 auto;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.job {
+   width: 29.6667%;
+   text-align: center;
+   border-bottom: 1px solid #3c3c3b;
+   margin-right: 5.5%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   padding-bottom: 8px;
+   padding-top: 8px;
+   margin-top: 16px;
+   background: linear-gradient(90deg, rgba(231,29,114,1) 0%, rgba(243,146,0,1) 25%, rgba(255,255,255,1) 50%) no-repeat bottom;
+   background-size: 300%;
+   background-position: right;
+   transition: background-position 1s, border-bottom-color 1.5s;
+}
+
+.job:hover {
+   border-bottom-color: transparent;
+   background-position: left;
+   transition: background-position 1s, border-bottom-color 1.5s;
+}
+
+@media (max-width: 980px) {
+   .job {
+       width: 100%;
+       margin-right: 0;
+   }
+}
+
+.job.nomargin {
+   margin-right: 0;
+}
+
+.job a {
+   text-transform: uppercase;
+   text-align: center;
+   font-family: 'Blender',Helvetica,Arial,Lucida,sans-serif;
+   font-size: 35px;
+   color: #3c3c3b;
+   transition: color 0.5s;
+}
+
+.job:hover a {
+   color: white;
+   transition: color 0.25s;
+   transition-delay: 0.25s;
+}
+</style>
+
+<script>
+const websites = [{
+   id: "career_bax",
+   apiID: "BaxEnergy",
+}]
+
+const staticURL = "https://jobs.smartrecruiters.com/";
+const fillTemplate = (title, id, website, nomargin) => {
+   const link = `https://www.baxenergy.com/career/#${id}`;
+   return `
+   <div class="job ${nomargin ? 'nomargin' : ''}">
+       <a href="${link}">${title}</a>
+   </div>
+   `;
+}
+
+const getJobs = async (website) => {
+   const response = await fetch(`https://api.smartrecruiters.com/v1/companies/BaxEnergy/postings`);
+   const request = await response.json(); //extract JSON from the http response
+   const jobs = request.content.sort(function (a, b) {
+       // ASC  -> a.length - b.length
+       // DESC -> b.length - a.length
+       return a.name.length - b.name.length;
+   });
+
+   const row = document.getElementById(website.id);
+   let innerHTML = ``;
+   for (let i = 0; i < jobs.length; i++) {
+       const job = jobs[i];
+       const id = job.id;
+       const title = job.name.toLowerCase();
+       const nomargin = !((i + 1) % 3);
+       innerHTML = innerHTML + fillTemplate(title, id, website, nomargin);
+   }
+   row.innerHTML = innerHTML;
+}
+
+for (let i = 0; i < websites.length; i++) {
+   const website = websites[i];
+   getJobs(website);
+}
+</script>

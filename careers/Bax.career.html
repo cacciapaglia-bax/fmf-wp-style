@@ -21,10 +21,10 @@
         const holdId = window.location.hash.replace('#', '');
         jQuery('#helper-divi').remove(); // I need to delete it because it needs to be seen only in the DiviEditor
         const url = `https://api.smartrecruiters.com/v1/companies/BaxEnergy/postings/${holdId}`;
-        debugger;
         const response = await fetch(url);
         const request = await response.json();
         console.log(request);
+        document.title.replace('Career', request.name)
         updateDiviText('job-title', request.name);
         updateDiviText('company-desc', request.jobAd.sections.companyDescription.text);
         updateDiviText('job-desc', request.jobAd.sections.jobDescription.text);

@@ -15,6 +15,7 @@
     async function getJob(params) {
         if (!window.location.hash) {
             console.warn('no job');
+            window.location.href = "/"; 
             return;
         }
         const holdId = window.location.hash.replace('#', '');
@@ -28,8 +29,8 @@
         updateDiviText('company-desc', request.jobAd.sections.companyDescription.text);
         updateDiviText('job-desc', request.jobAd.sections.jobDescription.text);
         updateDiviText('job-qual', request.jobAd.sections.qualifications.text);
-        const staticURL = "https://jobs.smartrecruiters.com/";
-        const link = `${staticURL}/${splitted[0]}/${splitted[1]}`;
+        const staticURL = "https://jobs.smartrecruiters.com/oneclick-ui/company/";
+        const link = `${splitted[0]}/${request.uuid}`;
         document.getElementById('apply-btt').href = link;
     }
     getJob();
