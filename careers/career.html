@@ -22,15 +22,15 @@
         const splitted = holdId.split(':');
         jQuery('#helper-divi').remove(); // I need to delete it because it needs to be seen only in the DiviEditor
         const url = `https://api.smartrecruiters.com/v1/companies/${splitted[0]}/postings/${splitted[1]}`;
-
         const response = await fetch(url);
         const request = await response.json();
         console.log(request);
+        updateDiviText('job-title', request.name);
         updateDiviText('company-desc', request.jobAd.sections.companyDescription.text);
         updateDiviText('job-desc', request.jobAd.sections.jobDescription.text);
         updateDiviText('job-qual', request.jobAd.sections.qualifications.text);
-        const staticURL = "https://jobs.smartrecruiters.com/oneclick-ui/company/";
-        const link = `${splitted[0]}/${request.uuid}`;
+        const staticURL = "https://jobs.smartrecruiters.com/oneclick-ui/company";
+        const link = `${staticURL}/${splitted[0]}/publication/${request.uuid}`;
         document.getElementById('apply-btt').href = link;
     }
     getJob();
