@@ -1,0 +1,37 @@
+<span id="helper-divi">
+    Smart recruiter code here!
+</span>
+<style>
+    .company-desc,
+    .job-desc,
+    .job-qual strong {
+        font-weight: normal;
+    }
+</style>
+<script>
+    function updateDiviText(id, content) {
+        document.getElementById(id).getElementsByTagName('p')[0].innerHTML = content;
+    }
+    async function getJob(params) {
+        if (!window.location.hash) {
+            console.warn('no job');
+            window.location.href = "/"; 
+            return;
+        }
+        const holdId = window.location.hash.replace('#', '');
+        jQuery('#helper-divi').remove(); // I need to delete it because it needs to be seen only in the DiviEditor
+        const url = `https://api.smartrecruiters.com/v1/companies/BaxEnergy/postings/${holdId}`;
+        debugger;
+        const response = await fetch(url);
+        const request = await response.json();
+        console.log(request);
+        updateDiviText('job-title', request.name);
+        updateDiviText('company-desc', request.jobAd.sections.companyDescription.text);
+        updateDiviText('job-desc', request.jobAd.sections.jobDescription.text);
+        updateDiviText('job-qual', request.jobAd.sections.qualifications.text);
+        const staticURL = "https://jobs.smartrecruiters.com/";
+        const link = `https://jobs.smartrecruiters.com/oneclick-ui/company/BaxEnergy/publication/${request.uuid}`;
+        document.getElementById('apply-btt').href = link;
+    }
+    getJob();
+</script>

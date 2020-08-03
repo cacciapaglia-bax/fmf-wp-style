@@ -968,4 +968,8 @@ body.mx-overrides {
         background: rgba(0, 0, 255, 0.5);
         backdrop-filter: blur(7px);
     }
+
+    .gallery-scope figcaption.gallery-caption {
+        width: fit-content;
+    }
 }
