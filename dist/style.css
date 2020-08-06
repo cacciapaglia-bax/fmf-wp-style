@@ -18,6 +18,7 @@ body.mx-overrides .mx-products-hook .product.type-product {
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 3px 3px 6px 0px #0e28e24d;
+  min-height: 315px;
 }
 @media (max-width: 768px) {
   body.mx-overrides .et_pb_shop ul.products.columns-4 li.product {
@@ -1426,6 +1427,9 @@ body.mx-overrides .pswp {
 body.mx-overrides .pswp__bg {
   background: rgba(0, 0, 255, 0.5);
   backdrop-filter: blur(7px);
+}
+body.mx-overrides .gallery-scope figcaption.gallery-caption {
+  width: fit-content;
 }
 
 body.et-db.mx-overrides #page-container #et-boc .et-l .et_pb_section .decm_event_display_0 p.ecs-showdetail {
