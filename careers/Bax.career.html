@@ -29,6 +29,7 @@
         updateDiviText('company-desc', request.jobAd.sections.companyDescription.text);
         updateDiviText('job-desc', request.jobAd.sections.jobDescription.text);
         updateDiviText('job-qual', request.jobAd.sections.qualifications.text);
+        updateDiviText('job-additional', request.jobAd.sections.additionalInformation.text);
         const staticURL = "https://jobs.smartrecruiters.com/";
         const link = `https://jobs.smartrecruiters.com/oneclick-ui/company/BaxEnergy/publication/${request.uuid}`;
         document.getElementById('apply-btt').href = link;
